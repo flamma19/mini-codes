@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Pre Loader with JQuery</title>
+    
+</head>
+<body>
+    <!--Pre Loader Section-->
+    <div id="loadBg">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <!--Pre Loader Section-->
+    <div class="container">
+        <div class="btn">
+            <a href="#">Read More</a>
+        </div>
+        <div class="btn">
+            <a href="#">Read More</a>
+        </div>
+        <div class="btn">
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <!--Pre loader script-->
+<script>
+    $(window).on("load", function(){
+        $("#loadBg").fadeOut("slow");
+    })
+</script>
+
+
+
+</body>
+</html>
